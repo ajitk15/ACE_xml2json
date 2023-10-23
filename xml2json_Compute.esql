@@ -1,0 +1,26 @@
+
+CREATE COMPUTE MODULE xml2json_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		
+		CREATE FIELD OutputRoot.JSON.Data;
+		DECLARE outRef REFERENCE TO  OutputRoot.JSON.Data;
+		
+		DECLARE inRef REFERENCE TO InputRoot.XMLNSC.employees;
+		DECLARE I INTEGER 1;
+	        
+		FOR atEmployee AS inRef.employee[] DO
+			CREATE FIELD outRef.employees IDENTITY (JSON.Array)employees;
+			 CREATE LASTCHILD OF outRef.employees.Item[I] TYPE NameValue NAME 'id' VALUE inRef.employee[I].id;
+			 CREATE LASTCHILD OF outRef.employees.Item[I] TYPE NameValue NAME 'firstName' VALUE inRef.employee[I].firstName;
+			 CREATE LASTCHILD OF outRef.employees.Item[I] TYPE NameValue NAME 'lastName' VALUE inRef.employee[I].lastName;
+			 CREATE LASTCHILD OF outRef.employees.Item[I] TYPE NameValue NAME 'email' VALUE inRef.employee[I].email;
+			 CREATE LASTCHILD OF outRef.employees.Item[I] TYPE NameValue NAME 'position' VALUE inRef.employee[I].position;
+			 CREATE LASTCHILD OF outRef.employees.Item[I] TYPE NameValue NAME 'salary' VALUE inRef.employee[I].salary;
+			 CREATE LASTCHILD OF outRef.employees.Item[I] TYPE NameValue NAME 'department' VALUE inRef.employee[I].(XMLNSC.Attribute)department;
+			SET I = I + 1;
+		END FOR;
+
+		RETURN TRUE;
+	END;
+END MODULE;

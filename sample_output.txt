@@ -1,0 +1,94 @@
+{
+    "employees": [
+        {
+            "id": "1",
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "john.doe@example.com",
+            "position": "Software Engineer",
+            "salary": "75000",
+            "department": "IT"
+        },
+        {
+            "id": "2",
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "email": "jane.smith@example.com",
+            "position": "Marketing Manager",
+            "salary": "65000",
+            "department": "Marketing"
+        },
+        {
+            "id": "3",
+            "firstName": "Michael",
+            "lastName": "Johnson",
+            "email": "michael.johnson@example.com",
+            "position": "HR Specialist",
+            "salary": "55000",
+            "department": "HR"
+        },
+        {
+            "id": "4",
+            "firstName": "Susan",
+            "lastName": "Williams",
+            "email": "susan.williams@example.com",
+            "position": "Financial Analyst",
+            "salary": "70000",
+            "department": "Finance"
+        },
+        {
+            "id": "5",
+            "firstName": "David",
+            "lastName": "Anderson",
+            "email": "david.anderson@example.com",
+            "position": "Graphic Designer",
+            "salary": "60000",
+            "department": "Design"
+        },
+        {
+            "id": "6",
+            "firstName": "Laura",
+            "lastName": "Brown",
+            "email": "laura.brown@example.com",
+            "position": "Project Manager",
+            "salary": "80000",
+            "department": "Project Management"
+        },
+        {
+            "id": "7",
+            "firstName": "Christopher",
+            "lastName": "Lee",
+            "email": "christopher.lee@example.com",
+            "position": "Sales Representative",
+            "salary": "62000",
+            "department": "Sales"
+        },
+        {
+            "id": "8",
+            "firstName": "Emily",
+            "lastName": "Clark",
+            "email": "emily.clark@example.com",
+            "position": "Product Manager",
+            "salary": "85000",
+            "department": "Product Management"
+        },
+        {
+            "id": "9",
+            "firstName": "Robert",
+            "lastName": "Hall",
+            "email": "robert.hall@example.com",
+            "position": "Customer Support Specialist",
+            "salary": "52000",
+            "department": "Customer Support"
+        },
+        {
+            "id": "10",
+            "firstName": "Mary",
+            "lastName": "Turner",
+            "email": "mary.turner@example.com",
+            "position": "Data Analyst",
+            "salary": "67000",
+            "department": "Analytics"
+        }
+    ]
+}
